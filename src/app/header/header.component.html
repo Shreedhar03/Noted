@@ -1,0 +1,8 @@
+<div class="flex items-center justify-center gap-2 cursor-pointer relative">
+    <img [src]="logoUrl" class="w-9 h-9 object-contain rounded-full" alt="logo">
+    <h1 class="text-2xl font-extrabold text-center" (mouseout)="handleMouseOut()" (mouseover)="handleMouseOver()">NoteIt</h1>
+    <!-- <p class="absolute -top-7" [class.hidden]="!showToolTip" [class.block]="showToolTip">v1.0.1 alpha</p> -->
+    <p class="absolute -top-7" *ngIf="showToolTip">v1.0.1 alpha</p>
+
+</div>
+<p class="italic font-semibold text-gray-700 mt-3">One stop solution for taking all your notes!</p>
